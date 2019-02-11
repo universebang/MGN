@@ -1,0 +1,48 @@
+2018-12-20-15:47:06
+
+load: 
+probability: 0.5
+nThread: 2
+batchtest: 16
+epochs: 400
+pre_train: 
+weight_decay: 0.0005
+dampening: 0
+nesterov: False
+data_train: Market1501
+amsgrad: True
+resume: 0
+width: 128
+datadir: /home/disk2/homedepot/clean-data/2018-09-14/2018-09-14/Market-1501-v15.09.15/
+nGPU: 1
+num_classes: 1142
+beta1: 0.9
+lr: 0.0002
+save: adam_1
+lr_decay: 60
+feats: 256
+beta2: 0.999
+optimizer: ADAM
+random_erasing: True
+epsilon: 1e-08
+data_test: Market1501
+batchid: 8
+savedir: saved_models
+height: 384
+pool: avg
+outdir: out
+reset: True
+loss: 1*CrossEntropy+2*Triplet
+save_models: False
+test_every: 50
+re_rank: True
+batchimage: 4
+test_only: False
+momentum: 0.9
+act: relu
+model: MGN
+decay_type: step_320_380
+margin: 1.2
+cpu: False
+gamma: 0.1
+

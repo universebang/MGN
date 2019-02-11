@@ -1,0 +1,1 @@
+在Caffe和convert两个文件夹中新建__init__.py空文件
